@@ -11,6 +11,6 @@ app.use(function(req, res) {
   res.sendFile(path.resolve(__dirname, './stock-app/index.html'))
 });
 
-
+app.listen(process.env.PORT || 3000);
 
 module.exports = app;
